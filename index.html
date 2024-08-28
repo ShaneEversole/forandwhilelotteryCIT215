@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+</head>
+<body>
+    <h2 class  ="display"></h2>
+    <script>
+        // let random = "";
+        // for (let num = 1; num <=6; num++){
+        //     let randomNumbers = Math.floor(Math.random()*50);
+        //     random += (num > 1 ? " " : "") + randomNumbers;
+        //    let displayh2 = document.querySelector(".display");
+        //    displayh2.textContent = `${random}`
+        //    console.log(randomNumbers)
+        // }
+
+        let random = "";
+        let num = 1;
+        while(num <=6){
+         let randomNumbers = Math.floor(Math.random()*50);
+        // the " " means there will be a space between numbers if num > 1 
+         random += (num > 1 ? " " : "") + randomNumbers;
+         num++;
+         console.log(randomNumbers);
+         let displayh2 = document.querySelector(".display");
+        displayh2.textContent = `${random}`
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
